@@ -1,0 +1,18 @@
+# User config
+author: 'Ari Bambang Kurniawan'
+tagline: 'Ari Bambang Kurniawan | Homepage'
+description: 'I’m a fresh graduate of Computer Science from Institut Teknologi Sumatera, I really like the experiment especially on programming and data science. Open to new connections 🤙'
+keywords: 'Pineapple, Pineapple Pizza, Pineapple House'
+email: 'ari.bambang@hotmail.com'
+linkedin: 'https://www.linkedin.com/in/aribambang'
+twitter: 'https://twitter.com/aribambangg'
+github: 'https://github.com/aribambang'
+instagram: 'https://instagram.com/ari.bambang'
+youtube: 'https://www.youtube.com/channel/UCeDqji9IjeohS6r4ADIjOaQ'
+
+# Site config
+baseurl: ''
+highlighter: rouge
+sass:
+  sass_dir: assets/scss
+  style: compressed
