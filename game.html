@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N Queen</title>
+  </head>
+  <body>
+    <div class="game">
+      <div class="game-heading">
+        <img
+          class="center"
+          src="https://img2.pngio.com/queen-elizabeth-ii-england-clipart-transparent-png-stickpng-queen-of-england-png-600_867.png"
+          alt="n-queen"
+        />
+      </div>
+      <div class="game-input-n">
+        <label for="n">Masukkan jumlah n: </label><br />
+        <input
+          type="number"
+          name="jmlhN"
+          id="jmlhN"
+          min="4"
+          max="8"
+          required
+        /><br />
+        <button id="btnMulai" name="btnMulai" onclick="mulai()">Mulai</button>
+      </div>
+      <div class="game-papan">
+        <table class="table table-hover">
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+      <div class="game-submit">
+        <button style="visibility: hidden" id="hapus" onclick="bersihPapan()">
+          Hapus
+        </button>
+        <button style="visibility: hidden" id="selesai" onclick="cekPapan()">
+          Selesai?
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

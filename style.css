@@ -44,6 +44,7 @@ main ol li {
   text-align: center;
   display: list-item;
   margin: 0;
+  font-size: 18px;
 }
 
 main a {
@@ -61,6 +62,105 @@ main a {
 }
 
 main a:hover {
+  background-color: #ce0606;
+  cursor: pointer;
+}
+
+.game {
+  font-family: 'Roboto', sans-serif;
+}
+.game-heading img {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 50%;
+  border: 2px solid #ffb81c;
+}
+.game-input-n {
+  width: 20%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game-input-n label {
+  font-size: 18px;
+  color: white;
+}
+
+.game-input-n input {
+  height: 24px;
+  width: 250px;
+}
+.game-input-n button {
+  background-color: #ffb81c;
+  box-shadow: 0 5px 0 darkred;
+  color: white;
+  padding: 10px 24px;
+  position: relative;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game-input-n button:hover {
+  background-color: #ce0606;
+  cursor: pointer;
+}
+
+.game-papan {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-papan table th td {
+  border: 0px solid black;
+}
+
+.game-papan td {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+.game-papan input[type='checkbox'] {
+  outline: 1px solid red;
+}
+
+.game-papan input:checked + span:before {
+  content: '👑';
+}
+
+.game-submit {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.game-submit button {
+  background-color: #ffb81c;
+  box-shadow: 0 5px 0 darkred;
+  color: white;
+  padding: 10px 24px;
+  position: relative;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.game-submit button:hover {
   background-color: #ce0606;
   cursor: pointer;
 }
