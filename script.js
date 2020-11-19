@@ -3,14 +3,14 @@ let n = 0;
 
 function mulai() {
   n = parseInt(document.getElementById('jmlhN').value);
-  document.getElementById('selesai').style.visibility = 'visible';
-  document.getElementById('hapus').style.visibility = 'visible';
   if (n >= 4 && n <= 8) {
     buatPapan(n);
     papan = [];
     for (i = 0; i < n; i++) {
       papan.push([]);
     }
+    document.getElementById('selesai').style.visibility = 'visible';
+    document.getElementById('hapus').style.visibility = 'visible';
   } else {
     return alert('Masukkan nilai n dengan 4 sampai 8');
   }
