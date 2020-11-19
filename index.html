@@ -1,44 +1,46 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>{{ site.author }} / {{ site.tagline }}</title>
-	<meta name="author" content="{{ site.author }}">
-	<meta name="description" content="{{ site.description }}">
-	<meta name="keywords" content="{{ site.keywords }}">
-	{% include head.html %}
-</head>
-<body>
-	{% include header.html %}
-	<main class="content">
-		<section class="intro">
-			<div class="container">
-				<h2>About me.</h2>
-				<p>{{ site.description }}</p>
-			</div>
-		</section>
-		<!-- <section class="projects">
-			<div class="container">
-				<h2>Projects I have worked on.</h2>
-				<ul class="projects-list">
-					{% for item in site.categories.projects reversed %}
-						<li>
-							<a href="{{ item.url | prepend: site.baseurl }}">
-								<div class="img-wrapper">
-									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
-								</div>
-								<span class="h2">{{ item.project.type }}</span>
-								<h3>{{ item.project.title }}</h3>
-							</a>
-						</li>
-					{% endfor %}
-				</ul>
-			</div>
-		</section> -->
-	</main>
-	{% include footer.html %}
-	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/assets/scripts/home.js" | prepend: site.baseurl }}"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <main>
+      <h1>👑 N Queen Games 👑</h1>
+      <img
+        class="center"
+        src="https://img2.pngio.com/queen-elizabeth-ii-england-clipart-transparent-png-stickpng-queen-of-england-png-600_867.png"
+      />
+      <p>
+        N Queen Games merupakan sebuah permain untuk mencari posisi sebuah queen
+        sebanyak nilai n pada papan catur yang memiliki ukuran n x n, antar
+        queen tidak boleh saling serang.
+      </p>
+      <h2>Aturan Main</h2>
+      <ol start="1">
+        <li>Nilai n harus lebih besar sama dengan 4.</li>
+        <li>
+          Tidak boleh lebih dari satu ratu yang terletak pada satu
+          <b>BARIS</b> yang sama.
+        </li>
+        <li>
+          Tidak boleh lebih dari satu ratu yang terletak pada satu
+          <b>KOLOM</b> yang sama.
+        </li>
+        <li>
+          Tidak boleh lebih dari satu ratu yang terletak pada satu
+          <b>DIAGONAL</b> yang sama.
+        </li>
+      </ol>
+      <a href="game.html" class="tombol">Mulai</a>
+    </main>
+  </body>
 </html>
