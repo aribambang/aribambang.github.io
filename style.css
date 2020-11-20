@@ -87,13 +87,15 @@ main a:hover {
 }
 
 .game-input-n label {
+  width: 100%;
   font-size: 18px;
   color: white;
 }
 
 .game-input-n input {
   height: 24px;
-  width: 250px;
+  width: 98%;
+  position: relative;
 }
 .game-input-n button {
   background-color: #ffb81c;
@@ -102,7 +104,7 @@ main a:hover {
   padding: 10px 24px;
   position: relative;
   text-decoration: none;
-  width: 100px;
+  width: 100%;
   text-align: center;
   margin-top: 10px;
   margin-left: auto;
@@ -168,5 +170,9 @@ main a:hover {
 @media only screen and (max-width: 600px) {
   main {
     width: 95%;
+  }
+
+  .game-input-n {
+    width: 80%;
   }
 }
