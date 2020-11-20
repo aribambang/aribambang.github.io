@@ -11,6 +11,7 @@ function mulai() {
     }
     document.getElementById('selesai').style.visibility = 'visible';
     document.getElementById('hapus').style.visibility = 'visible';
+    document.getElementById('audioo').play();
   } else {
     return alert('Masukkan nilai n dengan 4 sampai 8');
   }
